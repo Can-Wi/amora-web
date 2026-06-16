@@ -51,7 +51,7 @@ Dann `http://localhost:3200` öffnen. Optional im Browser ein lokales Backend an
 
 ## Deployment (Coolify, neue Resource)
 
-Statisches Image, lauscht auf **Port 3000**, Healthcheck unter `/healthz`.
+Statisches Image, lauscht auf **Port 8080** (interner Container-Port), Healthcheck unter `/healthz`.
 
 1. **DNS:** AAAA-Record für die gewählte Subdomain (z. B. `app.aetern.de`) auf die
    Server-IPv6 `2a01:4f8:1c19:f528::1` zeigen lassen (gleiche wie `api.aetern.de`).
@@ -64,8 +64,8 @@ Statisches Image, lauscht auf **Port 3000**, Healthcheck unter `/healthz`.
 ### Lokal als Container testen
 ```bash
 docker build -t amora-web .
-docker run --rm -p 3000:3000 amora-web
-# → http://localhost:3000  (nutzt api.aetern.de; CORS greift nur unter *.aetern.de)
+docker run --rm -p 8080:8080 amora-web
+# → http://localhost:8080  (nutzt api.aetern.de; CORS greift nur unter *.aetern.de)
 ```
 
 ## Struktur
