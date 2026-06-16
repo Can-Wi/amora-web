@@ -1,0 +1,8 @@
+.git
+.gitignore
+.DS_Store
+README.md
+dev-proxy.py
+node_modules
+*.log
+.claude
