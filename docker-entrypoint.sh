@@ -8,7 +8,7 @@ set -e
 : "${API_BASE:=https://api.aetern.de}"
 : "${WS_BASE:=wss://api.aetern.de}"
 : "${API_VERSION:=v2}"
-: "${BRAND:=AMORA}"
+: "${BRAND:=AETERN}"
 
 cat > /usr/share/nginx/html/config.js <<EOF
 window.AETERN_CONFIG = {
