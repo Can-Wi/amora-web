@@ -17,8 +17,8 @@
   var host = location.hostname;
   var isLocal = host === "localhost" || host === "127.0.0.1" || host === "0.0.0.0";
   var defaults = isLocal
-    ? { apiBase: "", wsBase: "wss://api.aetern.de", apiVersion: "v2", brand: "AMORA" }
-    : { apiBase: "https://api.aetern.de", wsBase: "wss://api.aetern.de", apiVersion: "v2", brand: "AMORA" };
+    ? { apiBase: "", wsBase: "wss://api.aetern.de", apiVersion: "v2", brand: "AETERN" }
+    : { apiBase: "https://api.aetern.de", wsBase: "wss://api.aetern.de", apiVersion: "v2", brand: "AETERN" };
   var override = {};
   try { override = JSON.parse(localStorage.getItem("AMORA_CFG") || "{}") || {}; } catch (e) {}
   window.AETERN_CONFIG = Object.assign(defaults, override);

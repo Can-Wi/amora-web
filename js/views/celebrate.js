@@ -23,7 +23,7 @@ export function celebrate(partner, matchId) {
         avatar(me?.display_name || "Ich", me?.photo_url, 84),
         partnerAv,
       ]),
-      el("button.btn.btn-block", { text: "Nachricht senden", style: { background: "#fff", color: "var(--brand-3)" },
+      el("button.btn.btn-block", { text: "Nachricht senden", style: { background: "#fff", color: "var(--mag-deep)" },
         onclick: () => { close(); location.hash = `#/chat/${matchId}`; } }),
       el("button.btn.btn-link.btn-block", { text: "Weiter entdecken", style: { color: "#fff", marginTop: "6px" }, onclick: close }),
     ]),

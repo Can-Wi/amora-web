@@ -18,7 +18,7 @@ export function showProfileDetail(p, opts = {}) {
     p.online ? el("span.pill.static", { html: `<span class="dot-online"></span> Online` }) : null,
   ]));
   if (p.compatibility != null) s.push(el("div.pill.static", { style: { marginTop: "8px" }, text: `✨ ${pct(p.compatibility)}% Kompatibilität${p.shared_interests ? ` · ${p.shared_interests} gemeinsame Interessen` : ""}` }));
-  if (p.reciprocal) s.push(el("div.pill.static", { style: { marginTop: "8px", color: "var(--brand-3)" }, text: "💘 Hat dich bereits geliked!" }));
+  if (p.reciprocal) s.push(el("div.pill.static", { style: { marginTop: "8px", color: "var(--mag-2)" }, text: "💘 Hat dich bereits geliked!" }));
   if (clean(p.bio)) s.push(el("p", { text: clean(p.bio), style: { color: "var(--ink)", marginTop: "12px" } }));
 
   const facts = [];

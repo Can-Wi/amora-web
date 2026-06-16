@@ -23,7 +23,7 @@ const TABS = [
   { key: "profile", label: "Profil", icon: icons.user, route: "#/profile" },
 ];
 
-const HEADER_TITLES = { discover: "AMORA", search: "Suchen", matches: "Nachrichten", profile: "Profil" };
+const HEADER_TITLES = { discover: "AETERN", search: "Suchen", matches: "Nachrichten", profile: "Profil" };
 
 /* ---------------- Routes ---------------- */
 const ROUTES = {
@@ -60,7 +60,7 @@ function renderHeader(route) {
     const isDiscover = route.tab === "discover";
     headerSlot.appendChild(el("div.app-header", {}, [
       isDiscover
-        ? el("div.h-title.brand-gradient-text", { html: `AMOR<span style="font-family:var(--display)">A</span>` })
+        ? el("div.h-title.brand-gradient-text", { html: `AET<span class="mag">ERN</span>` })
         : el("div.h-title", { text: HEADER_TITLES[route.tab] }),
       el("div.h-actions", {}, route.tab === "matches"
         ? [el("button.icon-btn", { html: icons.search(), onclick: () => location.hash = "#/search" })]

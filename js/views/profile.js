@@ -41,9 +41,9 @@ export function renderProfile(screen) {
 
     // email verify banner
     if (!me.email_verified) {
-      root.appendChild(el("div.tile-group", { style: { borderColor: "#ffe0c0", background: "#fff8ef" } }, [
+      root.appendChild(el("div.tile-group", { style: { borderColor: "var(--line-gold)", background: "rgba(216,166,74,0.07)" } }, [
         el("div.tile", { onclick: () => location.hash = "#/settings/verify" }, [
-          el("div.t-ico", { html: icons.bell(), style: { background: "#fff0db", color: "#b5760a" } }),
+          el("div.t-ico", { html: icons.bell(), style: { background: "rgba(216,166,74,0.16)", color: "var(--gold-2)", borderColor: "var(--line-gold)" } }),
           el("div.t-main", {}, [el("div.t-title", { text: "E-Mail bestätigen" }), el("div.t-sub", { text: "Verifiziere dein Konto für mehr Vertrauen." })]),
           el("span.chev", { html: icons.chevron() }),
         ]),
@@ -68,7 +68,7 @@ export function renderProfile(screen) {
       el("button.btn.btn-ghost.btn-block", { html: `${icons.logout()} Abmelden`, onclick: async () => {
         if (await confirmDialog({ title: "Abmelden?", body: "Du wirst von diesem Gerät abgemeldet." })) window.__amoraLogout?.();
       } }),
-      el("div.center.small.muted", { style: { marginTop: "14px" } }, [`AMORA · ${store.apiVersion || ""}`, me.member_since ? ` · Mitglied seit ${new Date(me.member_since).toLocaleDateString("de-DE", { month: "long", year: "numeric" })}` : ""]),
+      el("div.center.small.muted", { style: { marginTop: "14px" } }, [`AETERN · ${store.apiVersion || ""}`, me.member_since ? ` · Mitglied seit ${new Date(me.member_since).toLocaleDateString("de-DE", { month: "long", year: "numeric" })}` : ""]),
     ]));
   }
 

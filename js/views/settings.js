@@ -21,8 +21,8 @@ export function renderSettings(screen) {
     el("div.tile-group", {}, [
       tile(icons.lock(), "Privatsphäre & DSGVO", "Einwilligungen, Export, Protokoll", "#/settings/privacy"),
     ]),
-    el("div.tile-group", { style: { borderColor: "#ffd9dd" } }, [
-      tile(icons.trash(), "Konto löschen", "Alle Daten unwiderruflich löschen", "#/settings/delete", "var(--nope)"),
+    el("div.tile-group", { style: { borderColor: "rgba(255,93,108,0.3)" } }, [
+      tile(icons.trash(), "Konto löschen", "Alle Daten unwiderruflich löschen", "#/settings/delete", "var(--danger)"),
     ]),
   );
 }

@@ -115,10 +115,11 @@ export function confirmDialog({ title, body, confirmLabel = "Bestätigen", dange
 }
 
 /* ---------------- Avatars ---------------- */
+/* Dark, brand-aligned avatar gradients (magenta / gold / plum on near-black). */
 const GRADS = [
-  ["#ff9a6c", "#ff4d8d"], ["#ff7eb3", "#c4309b"], ["#7b6cff", "#ff6ec4"],
-  ["#36d1dc", "#5b86e5"], ["#f6d365", "#fda085"], ["#a18cd1", "#fbc2eb"],
-  ["#84fab0", "#8fd3f4"], ["#ff758c", "#ff7eb3"],
+  ["#3a1230", "#ec1c8c"], ["#2a1330", "#a80d63"], ["#1f1530", "#7b3cff"],
+  ["#2a1726", "#d8a64a"], ["#31161f", "#ff4db0"], ["#241a2e", "#b06cff"],
+  ["#2c2018", "#f3d691"], ["#321225", "#ff6ec4"],
 ];
 export function avatarBg(seed = "") {
   let h = 0; for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) | 0;

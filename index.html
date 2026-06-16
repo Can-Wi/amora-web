@@ -3,24 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#ff4d8d" />
-  <title>AMORA — Wo Verbindung beginnt</title>
-  <meta name="description" content="AMORA — die Dating-App, die echte Verbindungen schafft. Entdecke Menschen in deiner Nähe, die zu dir passen." />
+  <meta name="theme-color" content="#08060a" />
+  <title>AETERN — Alternative für Dating</title>
+  <meta name="description" content="AETERN — die Dating-Experience neu gedacht. Entdecke Menschen, die zu dir passen. Dunkel, elegant, anders." />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 
   <script src="config.js"></script>
 </head>
 <body>
-  <!-- Decorative animated background blobs -->
-  <div class="bg-aura" aria-hidden="true">
-    <span class="aura a1"></span>
-    <span class="aura a2"></span>
-    <span class="aura a3"></span>
+  <!-- Premium black-marble + gold-vein backdrop -->
+  <div class="backdrop" aria-hidden="true">
+    <div class="bd-base"></div>
+    <svg class="bd-veins" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="goldVein" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#6b4e1a" />
+          <stop offset=".5" stop-color="#f3d691" />
+          <stop offset="1" stop-color="#7a5d20" />
+        </linearGradient>
+        <filter id="veinBlur"><feGaussianBlur stdDeviation="1.1" /></filter>
+        <filter id="veinSoft"><feGaussianBlur stdDeviation="7" /></filter>
+      </defs>
+      <g fill="none" stroke="url(#goldVein)" stroke-linecap="round">
+        <g filter="url(#veinSoft)" opacity=".45" stroke-width="7">
+          <path d="M-60,140 C300,280 520,40 770,300 S1200,520 1520,400" />
+          <path d="M-60,720 C260,560 600,840 920,640 S1320,400 1520,560" />
+        </g>
+        <g filter="url(#veinBlur)" opacity=".9" stroke-width="2">
+          <path d="M-60,140 C300,280 520,40 770,300 S1200,520 1520,400" />
+          <path d="M-60,720 C260,560 600,840 920,640 S1320,400 1520,560" />
+          <path d="M210,-60 C330,210 180,430 430,640 S700,960 830,1020" />
+          <path d="M1120,-60 C980,220 1260,430 1090,690 S1190,960 1040,1020" />
+        </g>
+        <g opacity=".45" stroke-width=".9">
+          <path d="M770,300 C835,360 905,345 985,425" />
+          <path d="M430,640 C510,615 555,690 635,712" />
+          <path d="M1090,690 C1150,720 1210,690 1270,735" />
+        </g>
+      </g>
+    </svg>
+    <div class="bd-glow"></div>
+    <div class="bd-grain"></div>
   </div>
 
   <!-- App mounts here -->

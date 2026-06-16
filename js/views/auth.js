@@ -12,8 +12,8 @@ export function renderAuth(root, onAuthed) {
 
   function hero() {
     return el("div.auth-hero", {}, [
-      el("div.auth-logo", { html: `AMOR<span class="heart">A</span>` }),
-      el("div.auth-tag", { text: "Wo Verbindung beginnt." }),
+      el("div.auth-logo", { html: `AET<span class="mag">ERN</span>` }),
+      el("div.auth-tag", { text: "Alternative für Dating" }),
     ]);
   }
 
@@ -24,10 +24,10 @@ export function renderAuth(root, onAuthed) {
     return el("div.auth", {}, [
       hero(),
       el("div.auth-body", {}, [
-        el("h1.auth-title", { text: "Finde echte Verbindungen." }),
-        el("p.auth-sub", { text: "Menschen in deiner Nähe, die wirklich zu dir passen — mit Kompatibilitäts-Score, Live-Chat und Privatsphäre, die zählt." }),
+        el("h1.auth-title", { text: "Eine neue Art zu daten." }),
+        el("p.auth-sub", { text: "Kein Swipe wie jeder andere. Menschen, die wirklich zu dir passen — mit Kompatibilitäts-Score, Live-Chat und Privatsphäre, die zählt." }),
         el("div.feat-row", {}, [
-          feat("✨", "Smart-Matching"),
+          feat("✦", "Smart-Matching"),
           feat("💬", "Live-Chat"),
           feat("🔒", "DSGVO-sicher"),
         ]),
